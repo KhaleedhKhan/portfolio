@@ -335,18 +335,18 @@ nav {
     }
 
     .hero {
-      margin-top: -4rem;
+      margin-top: 1rem;
       flex-direction: column;
       gap: 0;
     }
   
     .hero img {
-          height: 37.5rem;
+          height: 32rem;
           width: 30rem;
       }
   
     .bio {
-      margin-top: -7rem;
+      margin-top: 2rem;
       width: 20.5rem;
     }
     .more-about {
