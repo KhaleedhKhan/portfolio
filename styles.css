@@ -306,23 +306,49 @@ nav {
 
   .CV {
     position: fixed;
-    right: 1.075%; /* Adjust right position as needed */
-    bottom: 10%;
+    right: 0.75%; /* Adjust right position as needed */
+    bottom: 11%;
     cursor: pointer;
     z-index: 2;
-    animation: highlightBlink 2s infinite; /* 2s duration, infinite repetition */
+    animation: rotateHighlight 4s linear infinite;
+    display: flex;  
+    /* animation: rotateCircle 3s linear infinite; */
+     /* 2s duration, infinite repetition */
+}
+
+.CVicon{
+  width:2.5rem;
+  height:2.5rem;
+  display: block;
 }
 
 
 
-@keyframes highlightBlink {
-  0%, 100% {
-      background-color: transparent; 
+/* @keyframes rotateCircle {
+  0% {
+      transform: rotate(0deg);
+      
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+} */
+
+@keyframes rotateHighlight {
+  0% {
+      transform: rotate(0deg);
+      background-color:chartreuse;
   }
   50% {
-      background-color: greenyellow; 
+      transform: rotate(180deg);
+      background-color:transparent;
+  }
+  100% {
+      transform: rotate(360deg);
+      background-color: chartreuse;
   }
 }
+
 
   .scroll-up {
     position: fixed;
