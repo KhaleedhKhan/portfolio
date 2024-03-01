@@ -306,7 +306,7 @@ nav {
 
   .CV {
     position: fixed;
-    right: 0.75%; /* Adjust right position as needed */
+    right: 1%; /* Adjust right position as needed */
     bottom: 11%;
     cursor: pointer;
     z-index: 2;
