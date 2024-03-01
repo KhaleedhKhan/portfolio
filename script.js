@@ -9,6 +9,14 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
+function openCV() {
+  // Replace 'path/to/cv.pdf' with the actual path to your CV file
+  var cvPath = 'CV/Pathan_Khaleedh_Khan.pdf';
+
+  // Open the CV in a new tab
+  window.open(cvPath, '_blank');
+}
+
   
   
 
