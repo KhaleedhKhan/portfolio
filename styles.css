@@ -341,11 +341,11 @@ nav {
   }
   50% {
       transform: rotate(180deg);
-      background-color:transparent;
+      background-color:aqua;
   }
   100% {
       transform: rotate(360deg);
-      background-color: chartreuse;
+      background-color:transparent;
   }
 }
 
