@@ -350,20 +350,26 @@ nav {
 }
 
 
-  .scroll-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 3%;
-    cursor: pointer;
-    z-index: 1;
-  }
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in/out */
+}
 
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
 
-  
-  .up-arrow {
-    width: 3rem;
-    height: 3rem;
-  }
+/* Show the icon only when scrolled down a certain amount */
+.scroll-up.show {
+  opacity: 1;
+}
+
 
   @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/

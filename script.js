@@ -1,13 +1,17 @@
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  const threshold = 100; // Adjust this value to control the scroll depth
+
+  if (scrollPosition > threshold) {
+    scrollUp.classList.add("show");
+  } else {
+    scrollUp.classList.remove("show");
+  }
 });
+
 
 function openCV() {
   // Replace 'path/to/cv.pdf' with the actual path to your CV file
