@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
 
 function openCV() {
   // Replace 'path/to/cv.pdf' with the actual path to your CV file
-  var cvPath = 'CV/Data Engineer.pdf';
+  var cvPath = 'CV/Khaleedh Resume.pdf';
 
   // Open the CV in a new tab
   window.open(cvPath, '_blank');
